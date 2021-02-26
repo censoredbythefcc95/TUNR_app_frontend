@@ -1,38 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap");
 .App {
   text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  background-color: rgb(237, 242, 243);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tunrlogo {
+  color: rgb(36, 36, 36);
+  text-align: left;
+  padding-left: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.slogan {
+  text-align: right;
+  padding-right: 20px;
+  border-bottom: 3px solid;
+}
+.playlist-name {
+  text-align: left;
+  width: 600px;
+  margin: 0 auto;
+}
+.flex-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 0 25px 0 25px;
+  border-bottom: 3px solid;
+}
+.fav-song {
+  text-align: left;
+  padding-left: 20px;
+}
+.fav-song-container {
+  border-bottom: 3px solid;
 }
 
-.App-link {
-  color: #61dafb;
+.all-songs {
+  padding: 3%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.song-details {
+  border: 1px solid;
+
+}
+.fav-song-container {
+  border-bottom: 3px solid;
 }
