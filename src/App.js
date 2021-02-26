@@ -11,7 +11,7 @@ import NewSongs from "./components/NewSongs";
 
 function App() {
 
-  // define backend url base------------------------------------
+  // define backend url base from HEROKU------------------------------------
   const url = "https://tunrappapi.herokuapp.com"
   // Defines STATES------------------------------------
   const [playlist, setPlaylist] = useState([])
