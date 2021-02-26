@@ -4,7 +4,7 @@ import "../App.css";
 const NewSongs = (props) => {
   const sample ={
     title: "songName",
-    artist: "singer",
+    author: "singer",
     time: "5:00"
   }
 
@@ -44,7 +44,7 @@ const NewSongs = (props) => {
           <input
             type="text"
             name="artist"
-            value={formData.artist}
+            value={formData.author}
             onChange={handleChange}
           />
         </div>

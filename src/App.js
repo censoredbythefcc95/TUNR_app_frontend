@@ -38,11 +38,21 @@ function App() {
   };
   // DESTROY ---
   
-  const deleteSong = (song)=>{
-    console.log("this is song",song)
-      axios.delete(url + '/songs/' + song._id)
-      .then((res)=>{getSongs()})
-    }
+  // const deleteSong = (song)=>{
+  //   console.log("this is song",song)
+  //     axios.delete(url + '/songs/' + song._id)
+  //     .then((res)=>{getSongs()})
+  //   }
+
+  const deleteSong = (currentSong) => {
+    const id = currentSong.id;
+    fetch(url + "/songs/" + id, {
+      method: "delete",
+    }).then(() => {
+      getSongs();
+    });
+    console.log("You are deleting: ", currentSong);
+  };
 
   return (
     <div className="App">

@@ -3,12 +3,15 @@ import React from "react";
 
 const Playlist = (props) => {
   const { playlist, deleteSong } = props;
+  const handleDelete = (songSelected) => {
+    props.deleteSong(songSelected);
+  };
   const loaded = () => {
     return (
       <div key={Playlist._id}>
         {playlist.map((song) => {
           return (
-            <article>
+            <article className="playlist-container">
               
 
               <div className="song-name">
@@ -16,13 +19,13 @@ const Playlist = (props) => {
               </div>
 
               <div className="artist-name">
-                <p> {song.artist} </p>
+                <p> {song.author} </p>
               </div>
 
               <div className="song-length">
                 <p> {song.time}</p>
               </div>
-              <button onClick={()=>{deleteSong(song)}}>X</button>
+              <button onClick={() => handleDelete(song)}>Delete Song</button>
             </article>
           );
         })}
